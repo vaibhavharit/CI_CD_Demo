@@ -14,7 +14,7 @@ public class WelcomeRestController {
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
 	@GetMapping("/welcome/{name}")
 	public String welcome(@PathVariable("name") String name) {
-		return "Welcome to Sporty Shoes! This is another change. Hello " + name;
+		return "Welcome to Sporty Shoes! This is another change from github. Hello " + name;
 	}
 		
 	@GetMapping("/admins")
